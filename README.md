@@ -9,6 +9,7 @@ This project demonstrates an Advanced Retrieval-Augmented Generation (RAG) pipel
 * CSV Files
 * Excel Files
 * Website Content
+* HTML files
 
 ## Architecture
 
