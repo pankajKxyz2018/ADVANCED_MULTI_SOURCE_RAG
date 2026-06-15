@@ -44,3 +44,11 @@ Retrieved Result:
 Eligible employees may receive up to 26 weeks of paid maternity leave in accordance with company policy.
 
 This demonstrates successful semantic retrieval across multiple document sources.
+
+## Retrieval Example
+
+Query:
+How many maternity leaves an employee entitled to?
+
+Retrieved Context:
+Eligible employees may receive up to 26 weeks of paid maternity leave in accordance with company policy.
