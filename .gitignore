@@ -1,73 +1,11 @@
-# ===============================================================
-# ADVANCES MULTI SOURCE RAG
-# ================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
 
-# ========================================================================================
-# STEP 1: IMPORTING OF FILES OR DOCUMENTS by using langchain_community.documents_loaders
-# =======================================================================================
+chroma_db/
+.env
 
-from langchain_community.document_loaders import (
-    PyPDFLoader,
-    Docx2txtLoader,
-    CSVLoader,
-    UnstructuredHTMLLoader
-)
-
-import pandas as pd
-
-from langchain_core.documents import Document
-
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-from langchain_google_genai import (
-    GoogleGenerativeAIEmbeddings,
-    ChatGoogleGenerativeAI)
-
-from langchain_chroma import Chroma
-
-from langchain_community.document_loaders import WebBaseLoader
-
-# ==================================================================================================
-# STEP 2 LOAD PDF
-# =================================================================================================
-
-pdf_loader = PyPDFLoader("data/HR_Policy.pdf")
-
-pdf_docs = pdf_loader.load()
-
-print("PDF DOCUMENTS:", len(pdf_docs))
-
-# ==================================================================================================
-# STEP 3 LOAD DOCX
-# =================================================================================================
-
-docx_loader = Docx2txtLoader("data/Employee_Handbook.docx")
-
-docx_docs = docx_loader.load()
-
-print("DOCX DOCUMENTS:", len(docx_docs))
-
-# ==================================================================================================
-# STEP 4 LOAD CSV
-# =================================================================================================
-
-csv_loader = CSVLoader("data/Annual_Report.csv")
-
-csv_docs = csv_loader.load()
-
-print("CSV DOCUMENTS:", len(csv_docs))
-
-# ==================================================================================================
-# STEP 5 LOAD HTML
-# =================================================================================================
-
-html_loader = UnstructuredHTMLLoader("data/HR_data.html")
-
-html_docs = html_loader.load()
-
-print("HTML DOCUMENTS:", len(html_docs))
-
-
-# ==================================================================================================
-# STEP 6 LOAD CSV
-# =================================================================================================
+venv/
+.venv/
